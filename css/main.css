@@ -1,0 +1,166 @@
+/* COMMON */
+a {
+  text-decoration: none;
+}
+.inner {
+  position: relative;
+  width: 2000px;
+  margin: 0 auto;
+}
+
+
+
+/* HEADER */
+header {
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
+header .inner {
+  height: 130px;
+  display: flex;
+  align-items: center;
+}
+header .logo {
+  width: 186px;
+  height: 50px;
+}
+header .logo a {
+  font-family: Righteous;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+header .sub-menu {
+  font-size: 32px;
+  position: absolute;
+  right: 0;
+}
+header .sub-menu a {
+  color: #fff;
+  margin-left: 30px;
+}
+header .sub-menu a:hover {
+  color: #158fff;
+}
+
+
+/* MAIN */
+.main {
+  background-image: url(../images/Hungary_Budapest.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 130px;
+  position: relative;
+}
+.main .inner {
+  height: 1700px;
+}
+.main .question-box {
+  width: 1300px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.main .question-box .question {
+  font-family: Noto Sans KR;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: absolute;
+  left: 120px;
+  top: 80px;
+}
+.main .question-box .country-box {
+  width: 850px;
+  height: 200px;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  border-radius: 8px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 100px;
+  display: flex;
+}
+.main .question-box .country-box .departure-box {
+  width: 50%;
+  height: 100%;
+}
+.main .question-box .country-box .destination-box .title,
+.main .question-box .country-box .departure-box .title {
+  width: 100%;
+  height: 25%;
+  border-bottom: 1px solid #cccccc;
+  text-align: center;
+}
+.main .question-box .country-box .destination-box .title>span,
+.main .question-box .country-box .departure-box .title>span{
+  line-height: 50px;
+  font-size: 25px;
+  color: rgb(94, 92, 92)
+}
+.main .question-box .country-box .destination-box .destination__country,
+.main .question-box .country-box .departure-box .departure__country {
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .question-box .country-box .departure-box .departure__country::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 350px;
+}
+.main .question-box .country-box .destination-box .destination__country input,
+.main .question-box .country-box .departure-box .departure__country input {
+  border: none;
+  font-size: 40px;
+  height: 50px;
+  width: 80px;
+}
+.main .question-box .country-box .destination-box .destination__country input::placeholder,
+.main .question-box .country-box .departure-box .departure__country input::placeholder {
+  color: black;
+}
+.main .question-box .country-box .destination-box .destination__country input:focus,
+.main .question-box .country-box .departure-box .departure__country input:focus {
+  outline: none;
+}
+.main .question-box .country-box .destination-box {
+  width: 50%;
+  height: 100%;
+}
+
+/* FOOTER */
+footer {
+  background-color: #f5f5f5;
+  text-align: center;
+}
+footer .inner {
+  padding: 50px 0 50px 0; 
+}
+
+
