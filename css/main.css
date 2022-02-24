@@ -7,7 +7,15 @@ a {
   width: 2000px;
   margin: 0 auto;
 }
-
+body {
+  font-family: Noto Sans KR;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
 
 
 /* HEADER */
@@ -45,6 +53,7 @@ header .sub-menu {
 header .sub-menu a {
   color: #fff;
   margin-left: 30px;
+
 }
 header .sub-menu a:hover {
   color: #158fff;
