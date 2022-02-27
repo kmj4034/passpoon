@@ -167,6 +167,7 @@ header .sub-menu a:hover {
   cursor: pointer;
   transition: .4s;
   color: black;
+  font-family: Noto Sans KR;
 }
 .search:hover {
   background-color: #158fff;
