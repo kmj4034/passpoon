@@ -7,6 +7,9 @@ a {
     width: 1200px;
     margin: 0 auto;
   }
+body {
+  position: relative;
+}
   
   
   
@@ -44,6 +47,10 @@ a {
   header .sub-menu a:hover {
     color: #158fff;
   }
+
+  
+
+
 
   /* FOOTER */
 footer {
