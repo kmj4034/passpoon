@@ -15,3 +15,22 @@ travelOngoingEl.addEventListener('click', function () {
   travelBeforeEl.classList.remove('focused')
   travelOngoingEl.classList.add('focused')
 });
+
+
+// POP UP
+const goEls = document.querySelectorAll('.country__detail .detail.go')
+const exitEl = document.querySelector('#exit')
+const bgEl = document.querySelector('#bg')
+const popupEl = document.querySelector('#pop-up')
+
+goEls.forEach(function (goEl) {
+  goEl.addEventListener('click', function () {
+    bgEl.classList.add('active')
+    popupEl.classList.add('active')
+  })
+})
+
+exitEl.addEventListener('click', function () {
+  bgEl.classList.remove('active')
+  popupEl.classList.remove('active')
+})

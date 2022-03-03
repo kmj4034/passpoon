@@ -2,11 +2,11 @@
 a {
     text-decoration: none;
   }
-  .inner {
-    position: relative;
-    width: 1200px;
-    margin: 0 auto;
-  }
+.inner {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
 body {
   position: relative;
 }
@@ -19,7 +19,7 @@ body {
     background-color: black;
     position: fixed;
     top: 0;
-    z-index: 9;
+    z-index: 2;
   }
   header .inner {
     height: 70px;
