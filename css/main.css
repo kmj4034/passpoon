@@ -5,11 +5,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-top: 70px;
+  margin-top: 50px;
   position: relative;
 }
 .main .inner {
-  height: 900px;
+  height: 925px;
 }
 .main .question-box {
   width: 800px;
@@ -129,7 +129,8 @@
 
 
 
-
-
-
-
+@media screen and (max-width: 1200px) {
+  .main .inner {
+    width: 80%;
+  }
+}

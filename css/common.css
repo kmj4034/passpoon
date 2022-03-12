@@ -38,6 +38,7 @@ body {
     font-size: 16px;
     position: absolute;
     right: 0;
+    display: flex;
   }
   header .sub-menu a {
     color: #fff;
@@ -47,9 +48,12 @@ body {
   header .sub-menu a:hover {
     color: #158fff;
   }
-
-  
-
+  header .menu-bar {
+    display: none;
+  }
+  header .icons {
+    display: none;
+  }
 
 
   /* FOOTER */
@@ -63,4 +67,60 @@ footer {
 footer .texture {
   padding: 20px 0 20px 0;
   font-size: 10px;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+  header .inner {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header>.inner {
+    flex-direction: column;
+    padding: 10px;
+    height: 100%;
+  }
+  header .logo {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  header .sub-menu {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    margin-bottom: 10px;
+    align-items: center;
+    width: 100%;
+  }
+  header .sub-menu.hide {
+    display: none;
+  }
+  header .sub-menu li {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  header .sub-menu li:hover {
+    background-color: #158fff;
+  }
+  header .sub-menu li:hover a {
+    color: #fff;
+  }
+  header .sub-menu li a {
+    display: block;
+    width: 100%;
+  }
+  header .menu-bar {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
 }
